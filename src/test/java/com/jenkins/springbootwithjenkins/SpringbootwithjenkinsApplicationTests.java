@@ -56,4 +56,18 @@ public class SpringbootwithjenkinsApplicationTests {
         Assert.assertEquals("錯誤",200,status);
     }
 
+    @Test
+    public void Api2() throws Exception{
+        String uri = "/api/2";
+        MvcResult result = mvc.perform(
+                MockMvcRequestBuilders
+                        .get(uri)
+                        .accept(MediaType.APPLICATION_JSON))
+                .andReturn();
+
+        int status = result.getResponse().getStatus();
+        System.out.println(status);
+        Assert.assertEquals("錯誤",200,status);
+    }
+
 }

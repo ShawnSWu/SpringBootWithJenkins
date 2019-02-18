@@ -26,4 +26,10 @@ public class SpringbootwithjenkinsApplication {
     String api1() {
         return "This is api 1!";
     }
+
+    @RequestMapping("/api/2")
+    @ResponseBody
+    String api2() {
+        return "This is api 2!";
+    }
 }
