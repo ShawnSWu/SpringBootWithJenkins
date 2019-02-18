@@ -20,4 +20,10 @@ public class SpringbootwithjenkinsApplication {
     String home() {
         return "Hello World!";
     }
+
+    @RequestMapping("/api/1")
+    @ResponseBody
+    String api1() {
+        return "This is api 1!";
+    }
 }
