@@ -1,11 +1,7 @@
 node {
-    stage("clean") {
-        cleanWs()
-    }
    stage('checkout github'){
     git branch: 'master',
            url:  'https://github.com/ShawnSWu/SpringBootWithJenkins.git'
-           sh 'git pull heroku master'
    }
    stage('Build'){
        sh './gradlew build'
