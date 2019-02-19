@@ -1,4 +1,3 @@
-Jenkinsfile (Declarative Pipeline)
 pipeline {
    stage('checkout github'){
     git branch: 'master',
