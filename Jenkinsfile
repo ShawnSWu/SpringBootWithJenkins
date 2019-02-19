@@ -1,4 +1,5 @@
-node {
+Jenkinsfile (Declarative Pipeline)
+pipeline {
    stage('checkout github'){
     git branch: 'master',
            url:  'https://github.com/ShawnSWu/SpringBootWithJenkins.git'
