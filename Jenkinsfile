@@ -1,6 +1,6 @@
 node {
    stage('checkout'){
-        checkout scm
+          git url: 'https://github.com/ShawnSWu/SpringBootWithJenkins.git', branch: 'master'
    }
    stage('Build'){
        sh './gradlew build'
