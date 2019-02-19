@@ -38,4 +38,10 @@ public class SpringbootwithjenkinsApplication {
     String api3() {
         return "This is api 3!";
     }
+
+    @RequestMapping("/api/4")
+    @ResponseBody
+    String api4() {
+        return "This is api 4!";
+    }
 }
