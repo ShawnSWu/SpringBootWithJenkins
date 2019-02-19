@@ -9,7 +9,6 @@ node {
    stage('Deploy'){
         git branch: 'master',
         url:  'https://git.heroku.com/jenkinswithspringboot.git'
-        sh 'git remote add hewroku https://git.heroku.com/jenkinswithspringboot.git'
         sh 'git push hewroku master'
    }
 
