@@ -44,4 +44,10 @@ public class SpringbootwithjenkinsApplication {
     String api4() {
         return "This is api 4!";
     }
+
+    @RequestMapping("/api/5")
+    @ResponseBody
+    String api5() {
+        return "This is api 5!";
+    }
 }
