@@ -50,4 +50,10 @@ public class SpringbootwithjenkinsApplication {
     String api5() {
         return "This is api 5!";
     }
+
+    @RequestMapping("/api/6")
+    @ResponseBody
+    String api6() {
+        return "This is api 6!";
+    }
 }
